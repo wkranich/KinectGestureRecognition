@@ -1,0 +1,158 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+
+  <title>Gesture Control</title>
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="three.min.js"></script>
+  <script src="3D.js"></script>
+  <script src="OrbitControls.js"></script>
+</head>
+<style>
+body {
+	margin: 0px;
+}
+h3 {
+    float: left;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 100;
+    font-size: 37px;
+    position: fixed;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+strong {
+    font-style: bold;
+}
+
+}
+#scene, #controls {
+    overflow: hidden;
+}
+#scene {
+    min-height: 100%;
+    min-width: 100%;
+}
+</style>
+<script>
+// input values
+
+$(document).ready(function(){
+    window.texture = THREE.ImageUtils.loadTexture('crate.jpg');
+    prepareSocketConnection();
+    
+    init();
+    animate();
+
+
+    var camera, scene, renderer, controls;
+    var geometry, material,material1, mesh,container;
+    var meshes = [];
+    var cross;
+   
+
+
+    function init() {
+        var loader = new THREE.JSONLoader();
+        scene = new THREE.Scene();
+        window.scene = scene;
+        /*
+        loader.load("car.js", function( geometry ) {
+            console.log("amyrose1")
+            mesh = new THREE.Mesh( geometry, new THREE.MeshNormalMaterial());
+            console.log("amyrose2")
+            mesh.scale.set( 1, 1, 1 );
+            mesh.position.y = 0;
+            mesh.position.x = 0;
+            scene.add( mesh );
+        },"crate.jpg");
+
+        */
+        camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+        
+        controls = new THREE.OrbitControls( camera,$("#scene")[0] );
+		controls.addEventListener( 'change', render );
+
+        window.controls = controls;
+
+        
+        addBox();
+        
+       	camera.position.z -= 800;
+
+        addlights();
+       
+        //renderer = new THREE.WebGLRenderer();
+        renderer = new THREE.CanvasRenderer();
+        renderer.setSize( window.innerWidth, window.innerHeight);
+
+        $("#scene").append( renderer.domElement );
+    }
+
+    function addlights() {
+        var light = new THREE.AmbientLight( 0x303030 );
+        scene.add(light);
+
+        var pointLight = new THREE.PointLight(0xFFFFFF,1,-3);
+        pointLight.position.set( 350, 150, 150 );
+        scene.add(pointLight);
+
+        pointLight = new THREE.PointLight(0xFFFFFF,1,-3);
+        pointLight.position.set( -150, -150, -150 );
+        scene.add(pointLight);
+
+        // add subtle ambient lighting
+        var ambientLight = new THREE.AmbientLight(0xbbbbbb);
+        scene.add(ambientLight);
+      
+      // directional lighting
+        var directionalLight = new THREE.DirectionalLight(0xffffff);
+        directionalLight.position.set(1, 1, 1).normalize();
+        scene.add(directionalLight);
+
+    }
+
+    function addBox() {
+        console.log('add box');
+        var geometry2 = new THREE.CubeGeometry(300,300,300),
+        material = new THREE.MeshLambertMaterial({ map: window.texture});
+        window.box = new THREE.Mesh(geometry2, material);
+
+       // setToOrigin(window.box);
+        window.box.overdraw = true;
+        
+        scene.add(window.box);
+    }
+
+    window.addBox = addBox;
+
+    function animate() {
+        controls.update();
+        renderer.render(scene,camera);
+        // note: three.js includes requestAnimationFrame shim
+        requestAnimationFrame(animate);
+
+		
+
+    }
+
+    function render() {
+		renderer.render( scene, camera );
+	}
+
+    function setToOrigin(mesh) {
+        mesh.position.x += mesh.geometry.width/2; 
+        mesh.position.y += mesh.geometry.height/2;
+        mesh.position.z += mesh.geometry.depth/2;
+    }
+
+});
+
+</script>
+<body>
+    <h3>Gesture Control <strong>2.0</strong></h3>
+    <div id="scene">
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+The system is: Windows - 6.2 - x86
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/Billy/Documents/Visual Studio 2010/Projects/Kinect/Kinect/Openni2_Opencv_wrapper-master/install/CMakeFiles/CMakeTmp
+
+Run Build Command:c:\PROGRA~2\MICROS~3.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec1994223946
+
+Microsoft (R) Visual Studio Version 10.0.30319.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec1994223946, Configuration: Debug Win32 ------
+1>Build started 4/15/2014 6:09:22 PM.
+1>PrepareForBuild:
+1>  Creating directory "C:\Users\Billy\Documents\Visual Studio 2010\Projects\Kinect\Kinect\Openni2_Opencv_wrapper-master\install\CMakeFiles\CMakeTmp\Debug\".
+1>InitializeBuildStatus:
+1>  Creating "cmTryCompileExec1994223946.dir\Debug\cmTryCompileExec1994223946.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1994223946.dir\Debug\\" /Fd"C:/Users/Billy/Documents/Visual Studio 2010/Projects/Kinect/Kinect/Openni2_Opencv_wrapper-master/install/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1994223946.pdb" /Gd /TP /analyze- /errorReport:prompt "C:\Users\Billy\Documents\Visual Studio 2010\Projects\Kinect\Kinect\Openni2_Opencv_wrapper-master\install\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"  /Zm1000 
+1>  
+1>  testCXXCompiler.cxx
+1>LinkEmbedManifest:
+1>  cmTryCompileExec1994223946.vcxproj -> C:\Users\Billy\Documents\Visual Studio 2010\Projects\Kinect\Kinect\Openni2_Opencv_wrapper-master\install\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1994223946.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "cmTryCompileExec1994223946.dir\Debug\cmTryCompileExec1994223946.unsuccessfulbuild".
+1>  Touching "cmTryCompileExec1994223946.dir\Debug\cmTryCompileExec1994223946.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:02.07
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Billy/Documents/Visual Studio 2010/Projects/Kinect/Kinect/Openni2_Opencv_wrapper-master/install/CMakeFiles/CMakeTmp
+
+Run Build Command:c:\PROGRA~2\MICROS~3.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec607503888
+
+Microsoft (R) Visual Studio Version 10.0.30319.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec607503888, Configuration: Debug Win32 ------
+1>Build started 4/15/2014 6:09:25 PM.
+1>InitializeBuildStatus:
+1>  Creating "cmTryCompileExec607503888.dir\Debug\cmTryCompileExec607503888.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec607503888.dir\Debug\\" /Fd"C:/Users/Billy/Documents/Visual Studio 2010/Projects/Kinect/Kinect/Openni2_Opencv_wrapper-master/install/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec607503888.pdb" /Gd /TP /analyze- /errorReport:prompt "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"  /Zm1000 
+1>  
+1>  CMakeCXXCompilerABI.cpp
+1>LinkEmbedManifest:
+1>  cmTryCompileExec607503888.vcxproj -> C:\Users\Billy\Documents\Visual Studio 2010\Projects\Kinect\Kinect\Openni2_Opencv_wrapper-master\install\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec607503888.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "cmTryCompileExec607503888.dir\Debug\cmTryCompileExec607503888.unsuccessfulbuild".
+1>  Touching "cmTryCompileExec607503888.dir\Debug\cmTryCompileExec607503888.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:01.54
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+

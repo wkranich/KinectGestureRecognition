@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kinect", "Kinect\Kinect.vcxproj", "{DF8CD3E5-1B7B-455A-92EB-4040BE405D55}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kinect3D", "Kinect3D\Kinect3D.vcxproj", "{47741CC3-8685-4FF3-BEFC-683B9D71AA31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF8CD3E5-1B7B-455A-92EB-4040BE405D55}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DF8CD3E5-1B7B-455A-92EB-4040BE405D55}.Debug|Win32.Build.0 = Debug|Win32
+		{DF8CD3E5-1B7B-455A-92EB-4040BE405D55}.Release|Win32.ActiveCfg = Release|Win32
+		{DF8CD3E5-1B7B-455A-92EB-4040BE405D55}.Release|Win32.Build.0 = Release|Win32
+		{47741CC3-8685-4FF3-BEFC-683B9D71AA31}.Debug|Win32.ActiveCfg = Debug|Win32
+		{47741CC3-8685-4FF3-BEFC-683B9D71AA31}.Debug|Win32.Build.0 = Debug|Win32
+		{47741CC3-8685-4FF3-BEFC-683B9D71AA31}.Release|Win32.ActiveCfg = Release|Win32
+		{47741CC3-8685-4FF3-BEFC-683B9D71AA31}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
